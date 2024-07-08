@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="eventreg.css">
+</head>
+<body>
+    <h1>Event Registration</h1>
+    <form id="registrationForm">
+        <div class="container">
+            <select name="eventName" id="eventName">
+                <option value="" disabled selected >Choose an Event</option>
+                <option value="Trekking" >Trekking</option>
+                <option value="Rock Climbing" >Rock Climbing</option>
+                <option value="Hiking">Hiking</option>
+            </select>
+        </div>
+        <div class="container">
+            <input type="text" name="userName" id="userName" placeholder="Enter your name">
+        </div>
+        <button type="submit" class="center-button">Add</button>
+    </form>
+    <div>
+        <br><br><br><br><br>
+        <hr> 
+        <br>
+        <br>
+    </div>
+    <div id="registrations">
+        <ul id="registrationList"></ul>
+        <table id="registrationTable" align="center">
+            <tr>
+                <th colspan="30"></th>
+                <td colspan="30"></td>
+            </tr>
+        </table>
+    </div>
+    <script src="eventreg.js"></script>
+</body>
+</html>
